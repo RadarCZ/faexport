@@ -1,0 +1,14 @@
+include:
+  remote: https://gitlab.com/torsten-projects/common-runtimes/-/raw/latest/ci-template.yml
+
+build release arm:
+  extends: .image-build-release-arm64
+
+build release:
+  extends: .image-build-release-amd64
+
+build manual arm:
+  extends: .image-build-manual-arm64
+
+build manual:
+  extends: .image-build-manual-amd64
